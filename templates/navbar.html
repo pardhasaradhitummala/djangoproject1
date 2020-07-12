@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Code Blog</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+  <nav>
+    <a class="title" href="{% url 'home' %}">CODEBLOG</a>
+    <a href="{% url 'python' %}">Python</a>
+    <a href="{% url 'java' %}">Java</a>
+    <a href="{% url 'csharp' %}">C#</a>
+    <a href="{% url 'html' %}">Html</a>
+  </nav>
+{% block content %}
+
+
+{% endblock %}
+</body>
+
+</html>
